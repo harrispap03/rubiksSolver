@@ -31,16 +31,6 @@ function init() {
   L2.position.x = -200;
   scene.add(L2);
 
-  // Phong material, Grey, Emissive
-  let greyPhongMat = new THREE.MeshPhongMaterial({
-    color: new THREE.Color("rgb(100,30,100)"),
-    specular: new THREE.Color("rgb(140,70,140)"),
-    shininess: 10,
-    shading: THREE.FlatShading,
-    transparent: 1,
-    opacity: 1,
-  });
-
   let boxGeometry = new THREE.BoxGeometry(10, 10, 10);
   let cubeMaterials = [
     new THREE.MeshBasicMaterial({ color: "#CC8400" }), // orange
